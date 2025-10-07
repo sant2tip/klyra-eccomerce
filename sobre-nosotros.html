@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Klyra | Misión y equipo</title>
+  <meta name="description" content="Descubre la historia de Klyra, nuestra misión para reducir el plástico de un solo uso y el equipo que impulsa el cambio.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'klyra-blue': '#0b1f3a',
+            'klyra-gold': '#c9a33f',
+            'klyra-light': '#f7f7f7'
+          },
+          fontFamily: {
+            sans: ['\"Poppins\"', '\"Inter\"', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #f7f7f7; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-sans text-klyra-blue">
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center space-x-2">
+        <span class="text-2xl font-semibold tracking-tight">Klyra</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-klyra-gold transition">Inicio</a>
+        <a href="productos.html" class="hover:text-klyra-gold transition">Productos</a>
+        <a href="sobre-nosotros.html" class="text-klyra-gold">Sobre nosotros</a>
+        <a href="faq.html" class="hover:text-klyra-gold transition">FAQ</a>
+        <a href="contacto.html" class="hover:text-klyra-gold transition">Contacto</a>
+      </nav>
+      <a href="productos.html" class="hidden md:inline-flex items-center px-4 py-2 bg-klyra-gold text-white rounded-full shadow hover:shadow-lg transition">Compra ahora</a>
+      <button id="nav-toggle" class="md:hidden text-2xl" aria-label="Abrir menú">☰</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <nav class="px-6 py-4 space-y-3 text-sm font-medium">
+        <a href="index.html" class="block hover:text-klyra-gold transition">Inicio</a>
+        <a href="productos.html" class="block hover:text-klyra-gold transition">Productos</a>
+        <a href="sobre-nosotros.html" class="block text-klyra-gold">Sobre nosotros</a>
+        <a href="faq.html" class="block hover:text-klyra-gold transition">FAQ</a>
+        <a href="contacto.html" class="block hover:text-klyra-gold transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 md:pt-32">
+    <section class="max-w-6xl mx-auto px-6 py-16 space-y-16">
+      <div class="fade-in text-center max-w-3xl mx-auto space-y-6">
+        <span class="inline-flex items-center px-4 py-1 rounded-full bg-white text-xs uppercase tracking-[0.2em] font-semibold text-klyra-blue/70">Nuestra historia</span>
+        <h1 class="text-4xl font-semibold">Reduciendo el plástico de un solo uso, botella a botella.</h1>
+        <p class="text-klyra-blue/70">Klyra nació de la necesidad de llevar agua de calidad a cualquier lugar sin depender de botellas desechables. Cada diseño combina tecnología, estética y responsabilidad ambiental.</p>
+      </div>
+
+      <div class="grid gap-10 lg:grid-cols-3">
+        <article class="fade-in bg-white rounded-3xl p-8 shadow-sm space-y-4">
+          <h2 class="text-2xl font-semibold">Misión</h2>
+          <p class="text-sm text-klyra-blue/70">Inspirar hábitos de hidratación conscientes con productos que eliminan el plástico de un solo uso y elevan la experiencia diaria.</p>
+        </article>
+        <article class="fade-in bg-white rounded-3xl p-8 shadow-sm space-y-4">
+          <h2 class="text-2xl font-semibold">Visión</h2>
+          <p class="text-sm text-klyra-blue/70">Crear soluciones de hidratación inteligentes que acompañen a millones de personas en un estilo de vida activo, saludable y sostenible.</p>
+        </article>
+        <article class="fade-in bg-white rounded-3xl p-8 shadow-sm space-y-4">
+          <h2 class="text-2xl font-semibold">Impacto</h2>
+          <p class="text-sm text-klyra-blue/70">Más de 1.5 millones de botellas desechables evitadas gracias a nuestra comunidad Klyra. Seguimos creciendo contigo.</p>
+        </article>
+      </div>
+
+      <div class="fade-in grid gap-10 lg:grid-cols-[2fr,3fr] items-center bg-white rounded-3xl p-10 shadow-sm">
+        <div class="space-y-6">
+          <h2 class="text-3xl font-semibold">Un equipo que cree en el cambio</h2>
+          <p class="text-klyra-blue/70">Somos especialistas en diseño, ingeniería y sostenibilidad. Cada botella que lanzamos se prueba en condiciones reales para asegurar rendimiento excepcional.</p>
+          <a href="contacto.html" class="inline-flex items-center px-6 py-3 bg-klyra-blue text-white rounded-full hover:bg-klyra-gold transition">Únete al cambio</a>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <figure class="text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Andrea, fundadora de Klyra" class="w-full rounded-3xl shadow-lg">
+            <figcaption class="text-sm font-medium">
+              Andrea · Fundadora &amp; CEO
+            </figcaption>
+          </figure>
+          <figure class="text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Paty, directora de operaciones" class="w-full rounded-3xl shadow-lg">
+            <figcaption class="text-sm font-medium">
+              Paty · Operaciones
+            </figcaption>
+          </figure>
+          <figure class="text-center space-y-3">
+            <img src="https://images.unsplash.com/photo-1544723795-432537fce3b3?auto=format&fit=crop&w=400&q=80" alt="Lidia, líder de sostenibilidad" class="w-full rounded-3xl shadow-lg">
+            <figcaption class="text-sm font-medium">
+              Lidia · Sostenibilidad
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-klyra-blue/10">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+      <div>
+        <span class="text-xl font-semibold">Klyra</span>
+        <p class="text-sm text-klyra-blue/60">Diseño que cuida de ti y del planeta.</p>
+      </div>
+      <div class="flex space-x-6 text-sm text-klyra-blue/70">
+        <a href="#" class="hover:text-klyra-gold transition">Aviso legal</a>
+        <a href="#" class="hover:text-klyra-gold transition">Política de privacidad</a>
+        <a href="#" class="hover:text-klyra-gold transition">Términos</a>
+      </div>
+      <p class="text-sm text-klyra-blue/60">&copy; <span id="year"></span> Klyra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.fade-in').forEach((element) => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      observer.observe(element);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
