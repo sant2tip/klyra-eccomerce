@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klyra | Agua pura en cualquier lugar</title>
+  <meta name="description" content="Klyra ofrece botellas de agua reutilizables con filtración avanzada para acompañarte en un estilo de vida activo y sostenible.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'klyra-blue': '#0b1f3a',
+            'klyra-gold': '#c9a33f',
+            'klyra-light': '#f7f7f7'
+          },
+          fontFamily: {
+            sans: ['\"Poppins\"', '\"Inter\"', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #f7f7f7; }
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.is-visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="font-sans text-klyra-blue">
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur shadow">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center space-x-2">
+        <span class="text-2xl font-semibold tracking-tight">Klyra</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-klyra-gold transition">Inicio</a>
+        <a href="productos.html" class="hover:text-klyra-gold transition">Productos</a>
+        <a href="sobre-nosotros.html" class="hover:text-klyra-gold transition">Sobre nosotros</a>
+        <a href="faq.html" class="hover:text-klyra-gold transition">FAQ</a>
+        <a href="contacto.html" class="hover:text-klyra-gold transition">Contacto</a>
+      </nav>
+      <a href="productos.html" class="hidden md:inline-flex items-center px-4 py-2 bg-klyra-gold text-white rounded-full shadow hover:shadow-lg transition">Compra ahora</a>
+      <button id="nav-toggle" class="md:hidden text-2xl" aria-label="Abrir menú">☰</button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <nav class="px-6 py-4 space-y-3 text-sm font-medium">
+        <a href="index.html" class="block hover:text-klyra-gold transition">Inicio</a>
+        <a href="productos.html" class="block hover:text-klyra-gold transition">Productos</a>
+        <a href="sobre-nosotros.html" class="block hover:text-klyra-gold transition">Sobre nosotros</a>
+        <a href="faq.html" class="block hover:text-klyra-gold transition">FAQ</a>
+        <a href="contacto.html" class="block hover:text-klyra-gold transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-28 md:pt-32">
+    <section class="relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div class="fade-in">
+          <span class="inline-flex items-center px-4 py-1 rounded-full bg-white text-xs uppercase tracking-[0.2em] font-semibold text-klyra-blue/70">Agua pura, sin límites</span>
+          <h1 class="mt-6 text-4xl md:text-5xl font-semibold leading-tight">Klyra: Agua pura, en cualquier lugar.</h1>
+          <p class="mt-6 text-lg text-klyra-blue/80">Botellas reutilizables con filtración inteligente que cuidan de ti, del planeta y de tu estilo. Lleva hidratación premium adonde vayas.</p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="productos.html" class="px-6 py-3 bg-klyra-gold text-white rounded-full shadow-lg shadow-klyra-gold/30 hover:-translate-y-0.5 transition-transform">Compra ahora</a>
+            <a href="#beneficios" class="px-6 py-3 border border-klyra-blue/20 rounded-full text-klyra-blue hover:border-klyra-gold hover:text-klyra-gold transition">Descubre más</a>
+          </div>
+        </div>
+        <div class="relative fade-in">
+          <div class="absolute -top-16 -right-16 h-64 w-64 bg-klyra-gold/20 rounded-full blur-3xl"></div>
+          <img src="https://images.unsplash.com/photo-1581579186983-4c08ca0c3bba?auto=format&fit=crop&w=800&q=80" alt="Botella Klyra sobre fondo blanco" class="relative w-full max-w-md mx-auto drop-shadow-2xl rounded-3xl">
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="bg-white py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center">Beneficios que marcan la diferencia</h2>
+        <p class="mt-4 text-center text-klyra-blue/70 max-w-2xl mx-auto">Diseñamos cada detalle para ofrecerte la experiencia de hidratación más pura, sostenible y sofisticada.</p>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="fade-in bg-klyra-light rounded-3xl p-6 shadow-sm hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/50/0b1f3a/filter.png" alt="Icono filtración" class="h-12 w-12">
+            <h3 class="mt-6 text-xl font-semibold">Filtración avanzada</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Elimina impurezas y mejora el sabor del agua con filtros certificados.</p>
+          </article>
+          <article class="fade-in bg-klyra-light rounded-3xl p-6 shadow-sm hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/50/0b1f3a/recycle.png" alt="Icono reutilizable" class="h-12 w-12">
+            <h3 class="mt-6 text-xl font-semibold">Reutilizable y ecológica</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Reduce tu huella ambiental y di adiós al plástico de un solo uso.</p>
+          </article>
+          <article class="fade-in bg-klyra-light rounded-3xl p-6 shadow-sm hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/50/0b1f3a/water-bottle.png" alt="Icono diseño" class="h-12 w-12">
+            <h3 class="mt-6 text-xl font-semibold">Diseño elegante</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Estética minimalista y premium para acompañarte en cualquier ocasión.</p>
+          </article>
+          <article class="fade-in bg-klyra-light rounded-3xl p-6 shadow-sm hover:shadow-lg transition">
+            <img src="https://img.icons8.com/ios-filled/50/0b1f3a/money-bag.png" alt="Icono ahorro" class="h-12 w-12">
+            <h3 class="mt-6 text-xl font-semibold">Ahorro económico</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Invierte en salud y ahorra al dejar de comprar botellas desechables.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center">¿Cómo funciona?</h2>
+        <p class="mt-4 text-center text-klyra-blue/70 max-w-2xl mx-auto">Tres pasos simples para disfrutar agua pura siempre.</p>
+        <div class="mt-16 grid gap-12 md:grid-cols-3">
+          <article class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=600&q=80" alt="Llenando la botella Klyra" class="rounded-2xl mb-6">
+            <h3 class="text-xl font-semibold">1. Llena</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Agrega agua de cualquier fuente segura. El filtro activado está listo para actuar.</p>
+          </article>
+          <article class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" alt="Filtro purificando agua" class="rounded-2xl mb-6">
+            <h3 class="text-xl font-semibold">2. Filtra</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">El filtro de carbón activo elimina impurezas, cloro y malos sabores en segundos.</p>
+          </article>
+          <article class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=600&q=80" alt="Persona tomando agua Klyra" class="rounded-2xl mb-6">
+            <h3 class="text-xl font-semibold">3. Disfruta</h3>
+            <p class="mt-3 text-sm text-klyra-blue/70">Hidrátate con estilo donde vayas: oficina, gimnasio o aventuras al aire libre.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="fade-in space-y-6">
+            <h2 class="text-3xl md:text-4xl font-semibold">Hidrátate con estilo</h2>
+            <p class="text-klyra-blue/70">Klyra acompaña cada momento: desde tu entrenamiento matutino hasta tus viajes de negocios. Mantén tu energía alta con agua filtrada y fresca siempre a mano.</p>
+            <p class="text-klyra-blue/70">Nuestro diseño premium encaja con tu ritmo y refleja tu compromiso con el planeta.</p>
+            <a href="productos.html" class="inline-flex items-center px-6 py-3 bg-klyra-blue text-white rounded-full hover:bg-klyra-gold transition">Explorar productos</a>
+          </div>
+          <div class="grid grid-cols-2 gap-4 fade-in">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Botella Klyra en la oficina" class="rounded-3xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1526402466350-4e1d0b5b4455?auto=format&fit=crop&w=600&q=80" alt="Botella Klyra en entrenamiento" class="rounded-3xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80" alt="Botella Klyra en viaje" class="rounded-3xl shadow-lg col-span-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center">Historias reales, resultados auténticos</h2>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <blockquote class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <p class="text-lg italic">“El filtro de Klyra me permite viajar ligera y confiada. Siempre tengo agua de buen sabor.”</p>
+            <footer class="mt-6 text-sm uppercase tracking-wide text-klyra-blue/60">Mariana · Diseñadora UX</footer>
+          </blockquote>
+          <blockquote class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <p class="text-lg italic">“Desde que la uso, dejé de comprar botellas plásticas. Es un cambio sencillo con gran impacto.”</p>
+            <footer class="mt-6 text-sm uppercase tracking-wide text-klyra-blue/60">Luis · Entrenador personal</footer>
+          </blockquote>
+          <blockquote class="fade-in bg-white rounded-3xl p-8 shadow-sm">
+            <p class="text-lg italic">“Diseño impecable y desempeño brillante. Perfecta para mis días de oficina y gym.”</p>
+            <footer class="mt-6 text-sm uppercase tracking-wide text-klyra-blue/60">Andrea · Consultora</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-klyra-blue text-white py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-6 fade-in">
+        <h2 class="text-3xl md:text-4xl font-semibold">Empieza hoy con Klyra</h2>
+        <p class="text-klyra-light/80">Da el paso hacia una hidratación consciente. Experimenta la pureza, el ahorro y el diseño que transforma tu día.</p>
+        <a href="productos.html" class="inline-flex items-center px-6 py-3 bg-klyra-gold text-white rounded-full shadow-lg hover:shadow-xl transition">Compra ahora</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-klyra-blue/10">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+      <div>
+        <span class="text-xl font-semibold">Klyra</span>
+        <p class="text-sm text-klyra-blue/60">Diseño que cuida de ti y del planeta.</p>
+      </div>
+      <div class="flex space-x-6 text-sm text-klyra-blue/70">
+        <a href="#" class="hover:text-klyra-gold transition">Aviso legal</a>
+        <a href="#" class="hover:text-klyra-gold transition">Política de privacidad</a>
+        <a href="#" class="hover:text-klyra-gold transition">Términos</a>
+      </div>
+      <p class="text-sm text-klyra-blue/60">&copy; <span id="year"></span> Klyra. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.fade-in').forEach((element) => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      observer.observe(element);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
